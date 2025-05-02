@@ -1,8 +1,8 @@
 #!/bin/bash
-npm install && npm run build && 
+npm install && npm run build &&
 chmod +x ./run-node.sh &&
 ../maelstrom test \
-             -w echo \
              --bin ./run-node.sh \
+             -w echo \
              --node-count 1 \
              --time-limit 10
